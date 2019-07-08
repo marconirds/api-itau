@@ -1,0 +1,5 @@
+{
+    "require": {
+        "eduardokum/laravel-boleto": "^0.8.2"
+    }
+}
