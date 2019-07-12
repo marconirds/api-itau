@@ -20,7 +20,7 @@ client_id | Sim | hash key | client_id passada pelo banco ao cliente
 client_secret | Sim | hash key | client_secret passada pelo banco ao cliente
 
 ## Como usar?
-Após definir as variáveis de ambiente acima, basta realizar um request em seu código passando um JSON em RAW via POST.
+Após definir as variáveis de ambiente acima, basta realizar um request em seu código na URL `https://api-itau.herokuapp.com` passando um JSON em RAW via POST.
 A API irá retornar um JSON com os dados do boleto no banco de dados do Itaú. Segue abaixo um template de JSON que será passado na request:  
 
 ```json
@@ -45,7 +45,7 @@ Segue um modelo do JSON retornado na request:
 ```
 
 ## Retorno
-Para se realizar uma requisição de retorno, bastar inserir na pasta `arquivos/retorno/` um único arquivo de retorno, logo em seguida chamar `retorno/index.php`. A request trará como resposta um JSON. 
+Para se realizar uma requisição de retorno, bastar inserir na pasta `arquivos/retorno/` um único arquivo de retorno, logo em seguida chamar `https://api-itau.herokuapp.com/retorno`. A request trará como resposta um JSON. 
 Segue modelo:  
 ```json
 {"carteira":"109","nossoNumero":"000000000011","numeroDocumento":"1","numeroControle":"0000000000000000000000000",  
